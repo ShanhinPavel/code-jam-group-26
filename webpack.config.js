@@ -37,13 +37,13 @@ module.exports = {
       inject: true,
       chunks: ['page1'],
       filename: 'apps/page1/build/index.html',
-      template: '!!html-webpack-plugin/lib/loader.js!./src/index.html',
+      template: '!!html-webpack-plugin/lib/loader.js!./src/template/index.html',
     }),
     new HtmlWebpackPlugin({
       inject: true,
       chunks: ['page2'],
       filename: 'apps/page2/build/index.html',
-      template: '!!html-webpack-plugin/lib/loader.js!./src/index.html',
+      template: '!!html-webpack-plugin/lib/loader.js!./src/template/index.html',
     }),
   ],
 };

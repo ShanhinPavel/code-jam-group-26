@@ -78,32 +78,32 @@ module.exports = {
     }),
     new CopyWebpackPlugin([
       {
-        from: './src/page1/src/img',
+        from: __dirname + '/src/page1/src/img',
         to: 'apps/page1/img',
         test: /\.(png|jpg|gif|jpeg)$/,
       },
       {
-        from: './src/page2/src/img',
+        from: __dirname + '/src/page2/src/img',
         to: 'apps/page2/img',
         test: /\.(png|jpg|gif|jpeg)$/,
       },
       {
-        from: './src/page3/src/img',
+        from:  __dirname + '/src/page3/src/img',
         to: 'apps/page3/img',
         test: /\.(png|jpg|gif|jpeg)$/,
       },
       {
-        from: './src/page4/src/img',
+        from:  __dirname + '/src/page4/src/img',
         to: 'apps/page4/img',
         test: /\.(png|jpg|gif|jpeg)$/,
       },
       {
-        from: './src/page5/src/img',
+        from:  __dirname + '/src/page5/src/img',
         to: 'apps/page5/img',
         test: /\.(png|jpg|gif|jpeg)$/,
       },
       {
-        from: './src/index/src/img',
+        from:  __dirname + '/src/index/src/img',
         to: 'apps/index/img',
         test: /\.(png|jpg|gif|jpeg)$/,
       },

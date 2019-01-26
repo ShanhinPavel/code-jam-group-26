@@ -15,6 +15,7 @@ module.exports = {
     page4: './src/page4/src/main.js',
     page5: './src/page5/src/main.js',
     index: './src/index/src/main.js',
+    list: './src/list/src/main.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -72,6 +73,12 @@ module.exports = {
       chunks: ['index'],
       filename: 'apps/index.html',
       template: '!!html-webpack-plugin/lib/loader.js!./src/template/index.html',
+    }),
+    new HtmlWebpackPlugin({
+      inject: true,
+      chunks: ['list'],
+      filename: 'apps/list/index.html',
+      template: '!!html-webpack-plugin/lib/loader.js!./src/template/list.html',
     }),
     new MiniCssExtractPlugin({
       filename: 'apps/[name]/[name].css',

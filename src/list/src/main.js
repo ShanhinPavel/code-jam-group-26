@@ -41,9 +41,26 @@ function checkLanguage() {
   return languageSite;
 }
 
+function initAHref() {
+  console.log('init href');
+  let link;
+  Object.keys(data).forEach((key) => {
+    if (key === 'a-href') {
+      link = data[key];
+    }
+  });
+
+  let temp;
+  Object.keys(link).forEach((key) => {
+    temp = document.getElementById(key);
+    temp.href = link[key];
+  });
+}
+
 function init() {
   const startLang = checkLanguage();
   changeSite(startLang);
+  initAHref();
   document.getElementsByClassName('lang__button')[0].addEventListener('click', (event) => {
     event.preventDefault();
     changeLang(event.target.dataset.lang);

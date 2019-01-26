@@ -1,10 +1,10 @@
 {
-  "default": {
-    "author4-href": "./author4",
-    "author3-href": "./author3",
-    "author2-href": "./author2",
-    "author1-href": "./author1",
-    "author5-href": "./author5"
+  "a-href": {
+    "author4": "./author4",
+    "author3": "./author3",
+    "author2": "./author2",
+    "author1": "./author1",
+    "author5": "./author5"
   },
   "en": {
     "title__list": "List of Authors",

@@ -8,8 +8,9 @@
   width: 100%;
   height: 100%;
   min-height: 50px;
+  min-width: 200px;
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
   background-color: blue;
@@ -18,6 +19,9 @@
 
 .main__lang-buttons {
   width: 150px;
+  display: flex;
+  flex-flow: row wrap;
+
 }
 
 .main__lang-buttons button {
@@ -26,11 +30,13 @@
 
 .main__navigation {
   width: 100%;
-  height: 30px;
-  min-width: 300px;
+  height: 100%;
+  min-height: 30px;
+  min-width: 200px;
   display: flex;
   justify-content: flex-end;
-  flex-direction: row;
+  flex-flow: row wrap;
+
   background-color: lightblue;
   border: 1px solid red;
 }
@@ -39,18 +45,6 @@
   margin-right: 20px;
 }
 
-.main__general {
-  height: 100%;
-  min-height: 450px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  background-color: aquamarine;
-  border: 1px solid red;
-}
-
-
 .main__section-about {
   display: flex;
   flex-direction: column;
@@ -58,6 +52,7 @@
   align-items: center;
   height: 100%;
   width: 100%;
+  min-width: 200px;
   min-height: 100px;
   border: 1px solid red;
 }
@@ -66,72 +61,16 @@
   text-align: center;
 }
 
-.main__author {
-  display: flex;
-  flex-flow: row wrap;
-  min-height: 200px;
-  border: 1px solid red;
-}
-
-.main__search-author {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  height: inherit;
-  width: 20%;
-}
-
-.main__search-inputs {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 50%;
-  height: 30%;
-  min-height: 30px;
-}
-
-.main__search-author [type="radio"] {
-  display: flex;
-  flex-direction: column;
-}
-
-.main__search-author label {
-  display: flex;
-  flex-direction: row;
-  align-items: inherit;
-}
-
-.main__search-author-textfield {
-  width: 60%;
-  height: 10%;
-
-}
-
-.main__authors {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  align-content: center;
-  height: inherit;
-  width: 55%;
-  border: 1px solid red;
-}
-
-.main__authors-all {
-  display: flex;
-  flex-flow: row wrap;
-  border: 1px solid red;
-
-}
-
 .main__author-of-day {
   display:flex;
   flex-direction: column;
   height: inherit;
-  width: 25%;
+  width: 100%;
   border: 1px solid red;
+  justify-content: start;
+  align-items: center;
+  min-width: 200px;
+
 }
 
 footer {
@@ -140,6 +79,7 @@ footer {
   flex-direction: column;
   width: 100%;
   height: 100%;
+  min-width: 200px;
   min-height: 150px;
   justify-content: space-evenly;
   align-items: center;
@@ -170,5 +110,53 @@ footer {
   justify-content: space-evenly;
 }
 
+@media all and (max-width: 800px) {
+  .main {
+    flex-flow: column wrap;
+    justify-content: space-around;
+  }
 
+  .main h1 {
+    font-size: 20px;
+  }
 
+  .main__lang-buttons {
+    align-items: inherit;
+  }
+
+  .main__navigation, 
+  .main__developers,
+  .main__lang-buttons {
+    justify-content: space-around;
+  }
+
+  .main__section-about h2,
+  .main__author-of-day h2,
+  footer h2 {
+    font-size: 17px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .main__navigation,
+  .main__lang-buttons,
+  .main__developers {
+    flex-flow: column wrap;
+  }
+  .main__navigation a {
+    text-align: center;
+  }
+
+  .main__lang-buttons {
+    align-items: inherit;
+  }
+
+  .main__developers-1,
+  .main__developers-2,
+  .main__developers-3 {
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 120px;
+  }
+}

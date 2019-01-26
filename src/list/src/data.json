@@ -1,10 +1,10 @@
 {
   "a-href": {
-    "author4": "./author4",
-    "author3": "./author3",
-    "author2": "./author2",
-    "author1": "./author1",
-    "author5": "./author5"
+    "author4": "../page4/index.html",
+    "author3": "../page3/index.html",
+    "author2": "../page2/index.html",
+    "author1": "../page1/index.html",
+    "author5": "../page5/index.html"
   },
   "en": {
     "title__list": "List of Authors",

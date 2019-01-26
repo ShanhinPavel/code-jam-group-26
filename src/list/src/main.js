@@ -53,6 +53,7 @@ function initAHref() {
   let temp;
   Object.keys(link).forEach((key) => {
     temp = document.getElementById(key);
+    console.log(link[key]);
     temp.href = link[key];
   });
 }

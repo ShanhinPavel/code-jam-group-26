@@ -22,7 +22,6 @@ module.exports = {
     filename: 'apps/[name]/[name].js',
     chunkFilename: '[id].[chunkhash].js',
   },
-  devtool: 'source-map',
   module: {
     rules: [
       {
@@ -78,7 +77,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: true,
       chunks: ['list'],
-      filename: 'apps/list/index.html',
+      filename: 'apps/list/list.html',
       template: '!!html-webpack-plugin/lib/loader.js!./src/template/list.html',
     }),
     new MiniCssExtractPlugin({
@@ -86,32 +85,32 @@ module.exports = {
     }),
     new CopyWebpackPlugin([
       {
-        from: __dirname + '/src/page1/src/img',
+        from: './src/page1/src/img',
         to: 'apps/page1/img',
         test: /\.(png|jpg|gif|jpeg)$/,
       },
       {
-        from: __dirname + '/src/page2/src/img',
+        from: './src/page2/src/img',
         to: 'apps/page2/img',
         test: /\.(png|jpg|gif|jpeg)$/,
       },
       {
-        from:  __dirname + '/src/page3/src/img',
+        from: './src/page3/src/img',
         to: 'apps/page3/img',
         test: /\.(png|jpg|gif|jpeg)$/,
       },
       {
-        from:  __dirname + '/src/page4/src/img',
+        from: './src/page4/src/img',
         to: 'apps/page4/img',
         test: /\.(png|jpg|gif|jpeg)$/,
       },
       {
-        from:  __dirname + '/src/page5/src/img',
+        from: './src/page5/src/img',
         to: 'apps/page5/img',
         test: /\.(png|jpg|gif|jpeg)$/,
       },
       {
-        from:  __dirname + '/src/index/src/img',
+        from: './src/index/src/img',
         to: 'apps/index/img',
         test: /\.(png|jpg|gif|jpeg)$/,
       },

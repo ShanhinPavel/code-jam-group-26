@@ -5,8 +5,113 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
   </head>
   <body>
-    <p>i am INDEX PAGE!</p>
+
+    <header class='main'>
+      <h1 class="main__logo">Писатели Белоруссии</h1>
+      <div class="main__lang-buttons">
+        <button value="ru">ru</button>
+        <button value="by">by</button>
+        <button value="en">en</button>
+      </div>
+    </header>
+
+    <nav class="main__navigation">
+        <a href="">Главная</a>
+        <a href="#day-author">Писатель дня</a>
+        <a href="">Разработчики</a>
+        <a href="">О нас</a>
+      </nav>
+
+    <main class="main__general">
+
+        <div id='about' class='main__section-about'>
+          <h2>О нас</h2>
+          <p>Наш сайт содержит информацию о белорусских писателях.</br>
+          Здесь вы найдете информацию о годах их жизни, написанных произведениях и др.</p>
+        </div>
+
+      <div class="main__author">
+     
+          <div class = 'main__search-author'>
+            <h3>Поиск</h3>
+          <input type="text" name="choice" class="main__search-author-textfield">
+            <div class="main__search-inputs">
+            <label for="name"><input type="radio" name="choice" id="name" value="name">по имени</label>
+            <label for="surname"><input type="radio" name="choice" id="surname" value="surname">по фамилии</label>
+            <label for="city"><input type="radio" name="choice" id="city" value="city">по городу</label>
+          </div>  
+          <button class="main__search-button">Поиск</button>
+          </div>
+
+          <div class="main__authors">
+              <h3>Авторы</h3>
+              <div class="main__authors-all">
+                <a href="">Коля</a>
+                <a href="">Вася</a>
+                <a href="">Петя</a>
+                <a href="">Вика</a>
+                <a href="">Оля</a>
+              </div>
+          </div>
+
+          <div class="main__author-of-day" name="day-author">
+              <h3>Автор дня</h3>
+              <div>
+                <a href="">Коля(1990-2018)</a>
+                <p>Родился в Минске в семье депутата и домохозяйки. Свои первое произведение <br> 
+                  написал в возрасте 15 лет. </p>
+              </div>
+          </div>
+        </div>
+    </main>   
+
+    <footer>
+      <h2>Разработчики</h2>
+      <div class="main__developers">
+        <div class="main__developers-1">
+          <img src="./index/img/evgenCherepov.jpg" alt="" width="75px" height="75px">
+          <div class="main__developers-1-information">
+            <h4>Eughene Cherepov</h4>
+            <p>Github: eughene-cherepov</p>
+          </div>
+        </div>
+
+        <div class="main__developers-2">
+          <img src="./index/img/shanhinPavel.jpg" alt="" width="75px" height="75px">
+          <div class="main__developers-2-information">
+            <h4>Shanhin Pavel</h4>
+            <p>Github: shanhinPavel</p>
+          </div>
+        </div>
+
+        <div class="main__developers-3">
+          <img src="./index/img/evgenOleshkevich.jpg" alt="" width="75px" height="75px">
+          <div class="main__developers-3-information">
+            <h4>Eugene Oleshkevich</h4>
+            <p>Github: SystemGhost</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+<script>
+  const searchButton = document.querySelector('.main__search-button');
+
+  searchButton.addEventListener('click', (event) => {
+    const textField = document.querySelector('.main__search [type="text"]');
+    const checkedRadio = document.querySelector('.main__search [type="radio"]:checked');
+
+    console.log(textField.value);
+    console.log(checkedRadio.value);
+
+    // Do something
+  });
+</script>
   </body>
 </html>
+
+<!--Our website contains information about belorussian writers.
+You will find information about their time of life, written books and other...-->

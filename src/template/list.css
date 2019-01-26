@@ -1,5 +1,14 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: pink;
+  background-color: blue;
+}
+
+.lang__button {
+  float: right;
+}
+
+header {
+  max-width: 1600px;
+  width: 100%;
 }

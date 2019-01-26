@@ -49,11 +49,28 @@ body {
   grid-area: photoGallery;
 }
 
+.authorPhotoGalleryImg{
+  display: block;
+  width: 30%;
+  min-width: 300px;
+  float: left;
+  border: .5px solid #000000;
+  margin: 1.5%;
+}
+
 .authorVideoGallery{
   grid-area: videoGallery;
 }
 
-/* standart pc display 100% */
+.authorVideoGalleryFilm{
+  display: block;
+  width: 30%;
+  height: 300px;
+  min-width: 300px;
+  float: left;
+  border: .5px solid #000000;
+  margin: 1.5%;
+}
 
 @media screen and (min-width: 721px) {
   .authorWrapper{
@@ -83,18 +100,5 @@ body {
       'videoGallery'
   }
  }
-
-
-
-.authorPhotoGalleryImg{
-  display: block;
-  width: 30%;
-  min-width: 300px;
-  float: left;
-  border: .5px solid #000000;
-  margin: 1.5%;
-}
-
-/* end of standart pc display 100% */
 
 /* END OF MY PART */

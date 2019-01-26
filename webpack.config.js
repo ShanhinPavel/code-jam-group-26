@@ -22,6 +22,7 @@ module.exports = {
     filename: 'apps/[name]/[name].js',
     chunkFilename: '[id].[chunkhash].js',
   },
+  devtool: 'source-map',
   module: {
     rules: [
       {

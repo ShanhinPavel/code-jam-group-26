@@ -1,5 +1,6 @@
 import data from './data';
 import '../../template/list.css';
+import names from './authors';
 
 function saveLanguage(lang) {
   const serialObj = JSON.stringify(lang);
@@ -68,4 +69,29 @@ function init() {
 
 window.onload = () => {
   init();
+  initSearch();
 };
+
+function initSearch() {
+  const searchButton = document.getElementById('searchLang');
+  searchButton.addEventListener('click', checkInput);
+}
+
+function checkInput() {
+  const searchQuery = document.getElementById('searchInput').value;
+  const currentLang = JSON.parse(localStorage.getItem('Culture-Portal'));
+    for (let i = 0; i < names[currentLang].length; i++) {
+      if(names[currentLang][i] == searchQuery){
+        drawSearchResult(names[currentLang][i]);
+      } else {
+        drawSearchResult(null);
+      }
+    }
+  }
+
+  function drawSearchResult(result){
+    const results = document.getElementById('searchResults');
+    if(result != null){
+    results.innerHTML='<li>' + result + '</li>';
+  }
+  }

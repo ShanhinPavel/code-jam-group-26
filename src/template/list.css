@@ -1,14 +1,15 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: blue;
-}
-
-.lang__button {
-  float: right;
+  background-color: gainsboro;
 }
 
 header {
+  max-width: 1600px;
+  width: 100%;
+}
+
+main {
   max-width: 1600px;
   width: 100%;
 }

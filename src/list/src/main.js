@@ -42,7 +42,6 @@ function checkLanguage() {
 }
 
 function initAHref() {
-  console.log('init href');
   let link;
   Object.keys(data).forEach((key) => {
     if (key === 'a-href') {
@@ -53,7 +52,6 @@ function initAHref() {
   let temp;
   Object.keys(link).forEach((key) => {
     temp = document.getElementById(key);
-    console.log(link[key]);
     temp.href = link[key];
   });
 }

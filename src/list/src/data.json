@@ -1,0 +1,36 @@
+{
+  "a-href": {
+    "author4": "./author4",
+    "author3": "./author3",
+    "author2": "./author2",
+    "author1": "./author1",
+    "author5": "./author5"
+  },
+  "en": {
+    "title__list": "List of Authors",
+    "logo": "Culture Portal",
+    "author1": "Author-1",
+    "author2": "Author-2",
+    "author3": "Author-3",
+    "author4": "Author-4",
+    "author5": "Author-5"
+  },
+  "ru": {
+    "title__list": "Список Авторов",
+    "logo": "Культурный портал",
+    "author1": "Автор-1",
+    "author2": "Автор-2",
+    "author3": "Автор-3",
+    "author4": "Автор-4",
+    "author5": "Автор-5"
+  },
+  "by": {
+    "title__list": "Спіс Аўтараў",
+    "logo": "Культурны партал",
+    "author1": "Аўтар-1",
+    "author2": "Аўтар-2",
+    "author3": "Аўтар-3",
+    "author4": "Аўтар-4",
+    "author5": "Аўтар-5"
+  }
+}

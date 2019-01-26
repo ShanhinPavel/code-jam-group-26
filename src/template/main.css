@@ -110,6 +110,11 @@ footer {
 @media all and (max-width: 800px) {
   .main {
     flex-flow: column wrap;
+    justify-content: space-around;
+  }
+
+  .main h1 {
+    font-size: 20px;
   }
 
   .main__lang-buttons {
@@ -120,6 +125,12 @@ footer {
   .main__developers,
   .main__lang-buttons {
     justify-content: space-around;
+  }
+
+  .main__section-about h2,
+  .main__author-of-day h2,
+  footer h2 {
+    font-size: 17px;
   }
 }
 

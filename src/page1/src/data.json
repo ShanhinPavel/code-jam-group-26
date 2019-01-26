@@ -1,4 +1,18 @@
 {
-  "name": "Page1",
-  "author": "Yanka kupala"
+  "a-href": {},
+  "src": {
+    "authorPhoto": "./img/author.jpg"
+  },
+  "en": {
+    "main__logo": "Belarusian writers",
+    "authorName": "Yakub Kolas"
+  },
+  "ru": {
+    "main__logo": "Писатели Беларуси",
+    "authorName": "Якуб Колас"
+  },
+  "by": {
+    "main__logo": "Пісьменнікі Беларусі",
+    "authorName": "Якуб Колас"
+  }
 }

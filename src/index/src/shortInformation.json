@@ -1,0 +1,98 @@
+{ 
+  "ru":{
+    "Jakub Kolas":{
+      "fullName":"Луцкевич Константин Михайлович",
+      "alias":"Якуб Колас",
+      "years":"1882-1956",
+      "description":"Белорусский советский писатель, поэт и переводчик, общественный деятель. Один из классиков и основоположников новой белорусской литературы.Народный поэт Белорусской ССР (1926). Академик АН Белорусской ССР (1928). Член СП СССР (1934).Заслуженный деятель науки Белорусской ССР (1944). Член ВКП(б) с 1945 года."
+    },
+    "Yanka Kupala" :{
+      "fullName":"Луцевич Иван Доминикович",
+      "alias":"Янка Купала",
+      "years":"1882-1942",
+      "description":"Классик белорусской литературы. Народный поэт БССР (1925).Академик АН БССР (1928) и АН УССР (1929). Лауреат Сталинской премии первой степени (1941) за сборник От сердца.Творчество Купалы отмечается за яркое описание крестьянского национального характера белорусов и его мировосприятия."
+    },
+    "Vasil Bykov":{
+      "fullName":"Быков Василий Владимирович",
+      "alias":"Василий Быков",
+      "years":"1924-2003",
+      "description":"Советский и белорусский писатель, общественный деятель, участник Великой Отечественной войны.Член Союза писателей СССР. Герой Социалистического Труда (1984). Народный писатель Беларуси (1980).Лауреат Ленинской премии (1986). Лауреат Государственной премии СССР (1974). Лауреат Государственной премии Белорусской ССР (1978)."
+    },
+    "Kandrat Krapiva":{
+      "fullName":"Атрахович Кондрат Кондратович",
+      "alias":"Кондрат Крапива",
+      "years":"1986-1991",
+      "description":"Белорусский советский писатель, поэт, драматург и переводчик, литературовед, сатирик, общественный деятель.Доктор филологических наук, академик АН Белорусской ССР (1950). Член ВКП(б) с 1941 года."
+    },
+    "Peter Brovka":{
+      "fullName":"Бровка Петр Устинович",
+      "alias":"Якуб Колас",
+      "years":"1905-1980",
+      "description":"Белорусский советский писатель, поэт и переводчик, драматург, публицист. Народный поэт БССР (1962). Академик АН БССР (1966).Лауреат Ленинской (1962) и двух Сталинских премий (1947, 1951). Депутат ВС СССР с 1956 года. Член ВКП(б) с 1940 года."
+    }
+  },
+  "eng":{
+    "Jakub Kolas":{
+      "fullName":"Kanstancin Michajlavic Mickievic",
+      "alias":"Jakub Kolas",
+      "years":"1882-1956",
+      "description":"Belarusian Soviet writer, poet and translator, public figure.One of the classics and founders of the new Belarusian literature.People's poet of the Byelorussian SSR (1926). Academician of the Academy of Sciences of the Byelorussian SSR (1928).Member of the USSR JV (1934). Honored Scientist of the Byelorussian SSR (1944). Member of the CPSU (b) since 1945."
+    },
+    "Yanka Kupala" :{
+      "fullName":"Ivan Daminikavich Lutsevich",
+      "alias":"Yanka Kupala",
+      "years":"1882-1942",
+      "description":"Belorussian poet and writer. Classic of belorussian literature. National poet of BSSR (1925).Academician of the Academy of Sciences of the BSSR (1928) and the Academy of Sciences of the Ukrainian SSR (1929).Winner of the Stalin Prize of the first degree (1941)."
+    },
+    "Vasil Bykov":{
+      "fullName":"Vasiliy Bykov Vladimirovich",
+      "alias":"Vasil Bykov",
+      "years":"1924-2003",
+      "description":"Soviet and Belarusian writer, public figure, participant of the Great Patriotic War.Member of the Union of Writers of the USSR. Hero of Socialist Labor (1984). People's Writer of Belarus (1980).Winner of the Lenin Prize (1986). Winner of the State Prize of the USSR (1974). Laureate of the State Prize of the Belarusian SSR (1978)."
+    },
+    "Kandrat Krapiva":{
+      "fullName":"Kondrat Atrahovich Kondratievich",
+      "alias":"Kandrat Krapiva",
+      "years":"1986-1991",
+      "description":"Belarusian Soviet writer, poet, playwright and translator, literary critic, satirist, public figure.Doctor of Philology, Academician of the Academy of Sciences of the Byelorussian SSR (1950). Member of the CPSU (b) since 1941."
+    },
+    "Peter Brovka":{
+      "fullName":"Brouka Uscinavic Piotr",
+      "alias":"Peter Brovka",
+      "years":"1905-1980",
+      "description":"Belarusian Soviet writer, poet and translator, playwright, publicist. People's poet of the BSSR (1962).Academician of the Academy of Sciences of the BSSR (1966). Laureate of Lenin (1962) and two Stalin Prizes (1947, 1951).Deputy of the USSR Supreme Soviet since 1956. Member of the CPSU (b) since 1940."
+    }
+  },
+  "by":{
+    "Jakub Kolas":{
+      "fullName":"Міцкевіч Канстанцін Міхайлавіч",
+      "alias":"Якуб Колас",
+      "years":"1882-1956",
+      "description":"Беларускі паэт, празаік, драматург, крытык, публіцыст, перакладчык, вучоны, педагог, грамадскі дзеяч;адзін з заснавальнікаў (з Янкам Купалам) сучаснай беларускай літаратуры і літаратурнай мовы. Народны паэт Беларусі (1926).Акадэмік АН Беларусі (1928). Заслужаны дзеяч навукі Беларусі (1944)."
+    },
+    "Yanka Kupala" :{
+      "fullName":"Луцэвіч Іван Дамінікавіч",
+      "alias": "Янка Купала",
+      "years":"1882-1942",
+      "description":"Беларускі паэт, драматург, публіцыст, перакладчык, класік беларускай літаратуры, адзін з заснавальнікаў новай беларускай літаратуры і літаратурнай мовы. Народны паэт Беларусі (1925). Акадэмік АН БССР (1928), АН УССР (1929).Лаўрэат Дзяржаўнай прэміі СССР (1941) за зборнік «Ад сэрца». Творчасць Купалы адзначаецца за яркае апісанне сялянскага быту, нацыянальнага характару беларусаў і яго светаразумення."
+    },
+    "Vasil Bykov":{
+      "fullName":"Быкаў Васіль Уладзіміравіч",
+      "alias": "Васiль Быкау",
+      "years":"1924-2003",
+      "description":"Cавецкі і беларускі пісьменнік, грамадскі дзеяч, удзельнік Вялікай Айчыннай вайны. Член Саюза пісьменнікаў СССР. Герой Сацыялістычнай Працы (1984). Народны пісьменьнік Беларусі (1980 г.). Лаўрэат Ленінскай прэміі (1986). Лаўрэат Дзяржаўнай прэміі СССР (1974). Лаўрэат Дзяржаўнай прэміі Беларускай ССР (1978). Большасць твораў - аповесці, дзеянне якіх адбываецца ў час Вялікай Айчыннай вайны і ў якіх паказаны маральны выбар чалавека ў найбольш драматычныя моманты жыцця."
+    },
+    "Kandrat Krapiva":{
+      "fullName":"Атраховіч Кандрат Кандратавіч",
+      "alias": "Кандрат Крапiва",
+      "years":"1986-1991",
+      "description":"Беларускі пісьменнік, паэт, сатырык, драматург, перакладчык, грамадскі дзеяч, літаратуразнавец. Народны пісьменнік Беларусі (1956). Герой Сацыялістычнай Працы (1975). Лаўрэат дзвюх Сталінскіх прэмій (1941, 1951) і Дзяржаўнай прэміі СССР (1971). З 1940 — член-карэспандэнт, а з 1950 — акадэмік АН БССР. Доктар філалагічных навук."
+    },
+    "Peter Brovka":{
+      "fullName":"Броука Пётр Усцiнавiч",
+      "alias": "Пятрусь Броука",
+      "years":"1905-1980",
+      "description":"Беларускі савецкі пісьменнік, паэт і перакладчык, драматург, публіцыст. Народны паэт БССР (1962). Акадэмік АН БССР (1966). Лаўрэат Ленінскай (1962) і двух Сталінскіх прэмій (1947, 1951). Дэпутат ВС СССР з 1956 года. Член ВКП (б) з 1940 года."
+    }
+  }
+} 

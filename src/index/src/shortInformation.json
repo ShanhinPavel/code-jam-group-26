@@ -1,4 +1,11 @@
 { 
+  "authorsList": [
+    "Jakub Kolas",
+    "Yanka Kupala",
+    "Vasil Bykov",
+    "Kandrat Krapiva",
+    "Peter Brovka"
+  ],
   "ru":{
     "Jakub Kolas":{
       "fullName":"Луцкевич Константин Михайлович",

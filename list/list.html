@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>List of Authors</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="../../apps/list/list.css" rel="stylesheet"></head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div id="logo" class="headLogo">Культурный портал</div>
+      <div class="lang__button">
+        <button type="button" data-lang="ru" class="langButton">ru</button>
+        <button type="button" data-lang="en" class="langButton">eng</button>
+        <button type="button" data-lang="by" class="langButton">by</button>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="searchWrapper">
+      <section class="searchHeadingWrap">
+        <div class="pageName">
+          <h2 id="pageName">Список авторов</h2>
+        </div>
+        <div class="authorSearchInput">
+          <input type="text" name="choice" id="searchInput" />
+        </div>
+        <div class="authorSearchButton">
+          <button id="searchLang">Поиск</button>
+        </div>
+        <div class="showAllAuthors">
+          <button id="showButton">Очистить</button>
+        </div>
+      </section>
+      <div class="filterButtons">
+        <label for="name" class="filterOptions">
+          <input type="radio" name="choice" id="name" value="name" checked/>
+          <span id="nameLang">по имени</span>
+        </label>
+        <label for="surname" class="filterOptions"><input type="radio" name="choice" id="surname" value="surname" />
+          <span id="surnameLang">по фамилии</span>
+        </label>
+        <label for="city" class="filterOptions"><input type="radio" name="choice" id="city" value="city" />
+          <span id="cityLang">по городу</span>
+        </label>
+      </div>
+
+      <ul id="searchResults" class="searchResults">
+        <li><a href="" id="author1">Автор-1</a></li>
+        <li><a href="" id="author2">Автор-2</a></li>
+        <li><a href="" id="author3">Автор-3</a></li>
+        <li><a href="" id="author4">Автор-4</a></li>
+        <li><a href="" id="author5">Автор-5</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer></footer>
+<script type="text/javascript" src="../../apps/list/list.js"></script></body>
+
+</html>

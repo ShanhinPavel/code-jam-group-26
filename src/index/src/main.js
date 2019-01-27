@@ -1,11 +1,8 @@
-import _data from './data';
 import '../../template/index.css';
 import shortInformation from './shortInformation.json';
+import dataTranslate from './data';
 
-console.log('hello, Page1', _data.name);
-console.log('hello, Page1', _data.author);
-
-function addAuthorToPage(data) {
+function getAuthor(data) {
   // Get authors by language
   const sitesLanguage = JSON.parse(localStorage.getItem('Culture-Portal'));
   const authorCollectionByLanguage = data[sitesLanguage];
@@ -14,14 +11,20 @@ function addAuthorToPage(data) {
   let day = date.getDay();
   // Get author from array
   let author = data.authorsList[day];
+
   if (!author) {
-    day = Math.floor(Math.random() * 5);
+    day = 4;
   }
   author = data.authorsList[day];
+  console.log('author', author);
   // Get author from json
   const authorData = authorCollectionByLanguage[author];
+  return authorData;
+}
+
+function addAuthorToPage(authorData, id) {
   // Get dom elements and add information to them
-  const authorInformation = document.getElementById('author-information');
+  const authorInformation = document.getElementById(id);
   const authorName = authorInformation.firstElementChild;
   const authorDescription = authorName.nextElementSibling;
   // Add information to page
@@ -29,8 +32,58 @@ function addAuthorToPage(data) {
   authorDescription.textContent = authorData.description;
 }
 
+function saveLanguage(lang) {
+  const serialObj = JSON.stringify(lang);
+  localStorage.setItem('Culture-Portal', serialObj);
+}
+
+function changeSite(lang) {
+  let local;
+  Object.keys(dataTranslate).forEach((key) => {
+    if (key === lang) {
+      local = dataTranslate[key];
+    }
+  });
+  let temp;
+  Object.keys(local).forEach((key) => {
+    temp = document.getElementById(key);
+    temp.innerHTML = local[key];
+  });
+}
+
+function changeLang(lang) {
+  if (lang !== 'ru' && lang !== 'en' && lang !== 'by') {
+    saveLanguage('ru');
+    return;
+  }
+  const languageSite = JSON.parse(localStorage.getItem('Culture-Portal'));
+  if (languageSite !== lang) {
+    saveLanguage(lang);
+    changeSite(lang);
+  }
+}
+
+function checkLanguage() {
+  let languageSite = JSON.parse(localStorage.getItem('Culture-Portal'));
+  if (languageSite === null) {
+    saveLanguage('ru');
+    languageSite = 'ru';
+  }
+  return languageSite;
+}
+
+function init() {
+  const startLang = checkLanguage();
+  changeSite(startLang);
+  document.getElementsByClassName('main__lang-buttons')[0].addEventListener('click', (event) => {
+    event.preventDefault();
+    changeLang(event.target.dataset.lang);
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
-  // addAuthorToPage(shortInformation);
-  console.log('dom end');
-  addAuthorToPage(shortInformation);
+  init();
+  const elementId = 'day-author';
+  const author = getAuthor(shortInformation);
+  addAuthorToPage(author, elementId);
 });

@@ -3,30 +3,30 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Page Title</title>
+    <title>Culture Portal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
 
     <header class='main'>
-      <h1 class="main__logo">Писатели Белоруссии</h1>
+      <h1 class="main__logo" id="main__logo">Писатели Белоруссии</h1>
       <div class="main__lang-buttons">
-        <button value="ru">ru</button>
-        <button value="by">by</button>
-        <button value="en">en</button>
+        <button value="ru" data-lang="ru">ru</button>
+        <button value="by" data-lang="by">by</button>
+        <button value="en" data-lang="en">en</button>
       </div>
     </header>
 
     <nav class="main__navigation">
-        <a href="#about">Главная</a>
-        <a href="./list/list.html">Авторы</a>
-        <a href="#developers">Разработчики</a>
-        <a href="#day-author">О нас</a>
+        <a href="#about" id="title_main">Главная</a>
+        <a href="./list/list.html" id="title_authors">Авторы</a>
+        <a href="#developers" id="title_developers">Разработчики</a>
+        <a href="#day-author" id="title_about-us">О нас</a>
       </nav>
 
       <article id='about' class='main__section-about'>
-          <h2>О нас</h2>
-          <p>Наш сайт содержит информацию о белорусских писателях.</br>
+          <h2 id="title_about">О нас</h2>
+          <p id="title_about-site">Наш сайт содержит информацию о белорусских писателях.</br>
           Здесь вы найдете информацию о годах их жизни, написанных произведениях и др.</p>
       </article>
 
@@ -42,7 +42,7 @@
     </main>   
 
     <footer id="developers">
-      <h2>Разработчики</h2>
+      <h2 id="title_developers-section">Разработчики</h2>
       <div class="main__developers">
         <div class="main__developers-1">
           <img src="./index/img/evgenCherepov.jpg" alt="Author1" width="75px" height="75px">
@@ -65,7 +65,7 @@
         <div class="main__developers-3">
           <img src="./index/img/evgenOleshkevich.jpg" alt="Author3" width="75px" height="75px">
           <div class="main__developers-3-information">
-            <h4>Eugene Oleshkevich</h4>
+            <h4>Evgeniy Oleshkevich</h4>
             <p>Github: <a href="https://github.com/SystemGhost" target="_blank">SystemGhost</a></p>
           </div>
         </div>

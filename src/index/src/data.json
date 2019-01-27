@@ -1,4 +1,34 @@
 {
-  "name": "Page1",
-  "author": "Yanka kupala"
+  "a-href": {},
+  "src": {},
+  "en": {
+    "main__logo": "Belarusian writers",
+    "title_main": "Main",
+    "title_authors": "Authors",
+    "title_developers": "Developers",
+    "title_about-us": "About Us",
+    "title_about": "About Us",
+    "title_about-site": "Our site contains information about Belarusian writers. </br> Here you will find information about the years of their life, written works, etc.",
+    "title_developers-section": "Developers"
+  },
+  "ru": {
+    "main__logo": "Писатели Беларуси",
+    "title_main": "Главная",
+    "title_authors": "Авторы",
+    "title_developers": "Разработчики",
+    "title_about-us": "О нас",
+    "title_about": "О нас",
+    "title_about-site": "Наш сайт змяшчае інфармацыю аб беларускіх пісьменніках. </br> Тут вы знойдзеце інфармацыю пра гады іх жыцця, напісаных творах і інш.",
+    "title_developers-section": "Разработчики"
+  },
+  "by": {
+    "main__logo": "Пісьменнікі Беларусі",
+    "title_main": "Галоўная",
+    "title_authors": "Аўтары",
+    "title_developers": "Распрацоўшчыкі",
+    "title_about-us": "Пра нас",
+    "title_about": "Пра нас",
+    "title_about-site": "Наш сайт содержит информацию о белорусских писателях.</br>Здесь вы найдете информацию о годах их жизни, написанных произведениях и др.",
+    "title_developers-section": "Распрацоўшчыкі"
+  }
 }

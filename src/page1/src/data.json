@@ -5,7 +5,8 @@
     "authorPhotoGalleryImg1": "./img/gal1.jpg",
     "authorPhotoGalleryImg2": "./img/gal2.jpg",
     "authorPhotoGalleryImg3": "./img/gal3.jpg",
-    "authorVideoGalleryFilm": "https://www.youtube.com/embed/EPfYYg5QPMg"
+    "authorVideoGalleryFilm": "https://www.youtube.com/embed/EPfYYg5QPMg",
+    "authorGeoImg1": ""
   },
   "en": {
     "main__logo": "Belarusian writers",

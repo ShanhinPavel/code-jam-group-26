@@ -67,10 +67,34 @@ function init() {
   });
 }
 
-window.onload = () => {
-  init();
-  initSearch();
-};
+function drawSearchResult(name, link) {
+  const results = document.getElementById('searchResults');
+  results.innerHTML = `<li> ${link} ${name} </a></li>`;
+}
+
+function checkName(language) {
+  const searchQuery = document.getElementById('searchInput').value;
+  const namesAndLinks = Object.entries(names[language]);
+  for (let i = 0; i < namesAndLinks.length; i += 1) {
+    const nextName = Object.entries(namesAndLinks[i][1]);
+    if (nextName[0][0] === searchQuery) {
+      const name = nextName[0][0];
+      const link = nextName[0][1];
+      drawSearchResult(name, link);
+    }
+  }
+}
+
+function checkInput() {
+  const currentLang = JSON.parse(localStorage.getItem('Culture-Portal'));
+
+  const languages = Object.entries(names);
+  for (let i = 0; i < languages.length; i += 1) {
+    if (languages[i][0] === currentLang) {
+      checkName(languages[i][0]);
+    }
+  }
+}
 
 function initSearch() {
   const searchButton = document.getElementById('searchLang');
@@ -78,27 +102,7 @@ function initSearch() {
   searchButton.addEventListener('click', checkInput);
 }
 
-function checkInput() {
-  const searchQuery = document.getElementById('searchInput').value;
-  const currentLang = JSON.parse(localStorage.getItem('Culture-Portal'));
-  
-  for(let key in names[currentLang]){
-    let name = names[currentLang][key];
-    for(let key in name){
-      if(key == searchQuery){
-        drawSearchResult(key, name[key]);
-      } else {
-        // drawSearchResult(null, null);
-      }
-    }
-  }
-}
-
-function drawSearchResult(name, link) {
-  const results = document.getElementById('searchResults');
-  // if (name != null) {
-    results.innerHTML = '<li>' + link + name + '</a>' + '</li>';
-  // } else {
-    // results.innerHTML = '<h2>' + '???' + '</h2>'
-  // }
-}
+window.onload = () => {
+  init();
+  initSearch();
+};

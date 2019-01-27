@@ -74,24 +74,31 @@ window.onload = () => {
 
 function initSearch() {
   const searchButton = document.getElementById('searchLang');
+  init();
   searchButton.addEventListener('click', checkInput);
 }
 
 function checkInput() {
   const searchQuery = document.getElementById('searchInput').value;
   const currentLang = JSON.parse(localStorage.getItem('Culture-Portal'));
-    for (let i = 0; i < names[currentLang].length; i++) {
-      if(names[currentLang][i] == searchQuery){
-        drawSearchResult(names[currentLang][i]);
+  
+  for(let key in names[currentLang]){
+    let name = names[currentLang][key];
+    for(let key in name){
+      if(key == searchQuery){
+        drawSearchResult(key, name[key]);
       } else {
-        drawSearchResult(null);
+        // drawSearchResult(null, null);
       }
     }
   }
+}
 
-  function drawSearchResult(result){
-    const results = document.getElementById('searchResults');
-    if(result != null){
-    results.innerHTML='<li>' + result + '</li>';
-  }
-  }
+function drawSearchResult(name, link) {
+  const results = document.getElementById('searchResults');
+  // if (name != null) {
+    results.innerHTML = '<li>' + link + name + '</a>' + '</li>';
+  // } else {
+    // results.innerHTML = '<h2>' + '???' + '</h2>'
+  // }
+}

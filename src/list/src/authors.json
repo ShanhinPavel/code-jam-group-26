@@ -1,23 +1,23 @@
 {
-    "en":[
-        "Jakub Kolas",
-        "Yanka Kupala",
-        "Vasil Bykov",
-        "Kandrat Krapiva",
-        "Peter Brovka"
-    ],
-    "ru":[
-        "Якуб Колас",
-        "Янка Купала",
-        "Василь Быков",
-        "Кондрат Крапива",
-        "Пётр Бровка"
-    ],
-    "by":[
-        "Якуб Колас",
-        "Янка Купала",
-        "Васіль Быкаў",
-        "Кандрат Крапіва",
-        "Пётр Броўка"
-    ]
+  "en": [
+    { "Jakub Kolas": "<a href='../page1/index.html' id='author1'>" },
+    { "Yanka Kupala": "<a href='../page2/index.html' id='author2'>" },
+    { "Vasil Bykov": "<a href='../page3/index.html' id='author3'>" },
+    { "Kandrat Krapiva": "<a href='../page4/index.html' id='author4'>" },
+    { "Peter Brovka": "<a href='../page5/index.html' id='author5'>" }
+  ],
+  "ru": [
+    { "Якуб Колас": "<a href='../page1/index.html' id='author1'>" },
+    { "Янка Купала": "<a href='../page2/index.html' id='author2'>" },
+    { "Василь Быков": "<a href='../page3/index.html' id='author3'>" },
+    { "Кондрат Крапива": "<a href='../page4/index.html' id='author4'>" },
+    { "Пётр Бровка": "<a href='../page5/index.html' id='author5'>" }
+  ],
+  "by": [
+    { "Якуб Колас": "<a href='../page1/index.html' id='author1'>" },
+    { "Янка Купала": "<a href='../page2/index.html' id='author2'>" },
+    { "Васіль Быкаў": "<a href='../page3/index.html' id='author3'>" },
+    { "Кандрат Крапіва": "<a href='../page4/index.html' id='author4'>" },
+    { "Пётр Броўка": "<a href='../page5/index.html' id='author5'>" }
+  ]
 }

@@ -16,8 +16,9 @@ function getAuthor(data) {
     day = 4;
   }
   author = data.authorsList[day];
-  console.log('author', author);
+  document.getElementById('day-author').dataset.name = author;
   // Get author from json
+
   const authorData = authorCollectionByLanguage[author];
   return authorData;
 }
@@ -51,6 +52,12 @@ function changeSite(lang) {
   });
 }
 
+function changeAuthor(lang) {
+  const authorData = document.getElementById('day-author').dataset.name;
+  const obj = shortInformation[lang][authorData];
+  addAuthorToPage(obj, 'day-author');
+}
+
 function changeLang(lang) {
   if (lang !== 'ru' && lang !== 'en' && lang !== 'by') {
     saveLanguage('ru');
@@ -60,6 +67,7 @@ function changeLang(lang) {
   if (languageSite !== lang) {
     saveLanguage(lang);
     changeSite(lang);
+    changeAuthor(lang);
   }
 }
 

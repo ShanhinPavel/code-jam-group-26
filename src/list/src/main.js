@@ -69,21 +69,93 @@ function init() {
 
 // SEARCH
 
-function drawSearchResult(name, link) {
+function drawSearchResult(name, surname, link) {
   const results = document.getElementById('searchResults');
-  results.innerHTML = `<li> ${link} ${name} </a></li>`;
+  const fullLink = `<li>${link}${name} ${surname}</a></li>`;
+  results.insertAdjacentHTML('afterbegin', fullLink);
+}
+
+function clearResults() {
+  const results = document.getElementById('searchResults');
+  results.innerHTML = '';
+}
+
+function nameSearch(language) {
+  clearResults();
+  const namesAndLinks = Object.entries(names[language]);
+  const searchQuery = document.getElementById('searchInput').value;
+  const queryToLowCase = searchQuery.toLowerCase();
+  for (let i = 5; i < 10; i += 1) {
+    const namesArr = Object.entries(Object.entries(namesAndLinks)[i][1][1]);
+    const nameProps = namesArr[0][1];
+    const propToLowCase = nameProps.toLowerCase();
+    if (propToLowCase === queryToLowCase) {
+      const name = namesArr[0][1];
+      const surname = namesArr[1][1];
+      const link = namesArr[3][1];
+      drawSearchResult(name, surname, link);
+    }
+  }
+}
+
+function surnameSearch(language) {
+  clearResults();
+  const namesAndLinks = Object.entries(names[language]);
+  const searchQuery = document.getElementById('searchInput').value;
+  const queryToLowCase = searchQuery.toLowerCase();
+  for (let i = 5; i < 10; i += 1) {
+    const namesArr = Object.entries(Object.entries(namesAndLinks)[i][1][1]);
+    const nameProps = namesArr[1][1];
+    const propToLowCase = nameProps.toLowerCase();
+    if (propToLowCase === queryToLowCase) {
+      const name = namesArr[0][1];
+      const surname = namesArr[1][1];
+      const link = namesArr[3][1];
+      drawSearchResult(name, surname, link);
+    }
+  }
+}
+
+function citySearch(language) {
+  clearResults();
+  const namesAndLinks = Object.entries(names[language]);
+  const searchQuery = document.getElementById('searchInput').value;
+  const queryToLowCase = searchQuery.toLowerCase();
+  for (let i = 5; i < 10; i += 1) {
+    const namesArr = Object.entries(Object.entries(namesAndLinks)[i][1][1]);
+    const nameProps = namesArr[2][1];
+    const propToLowCase = nameProps.toLowerCase();
+    if (propToLowCase === queryToLowCase) {
+      const name = namesArr[0][1];
+      const surname = namesArr[1][1];
+      const link = namesArr[3][1];
+      drawSearchResult(name, surname, link);
+    }
+  }
+  
+}
+
+function getSearchParam() {
+  const nameRadio = document.getElementById('name');
+  const surnameRadio = document.getElementById('surname');
+  const city = document.getElementById('city');
+  if (nameRadio.checked) {
+    return ('name');
+  } if (surnameRadio.checked) {
+    return ('surname');
+  } if (city.checked) {
+    return ('city');
+  }
 }
 
 function checkName(language) {
-  const searchQuery = document.getElementById('searchInput').value;
-  const namesAndLinks = Object.entries(names[language]);
-  for (let i = 0; i < namesAndLinks.length; i += 1) {
-    const nextName = Object.entries(namesAndLinks[i][1]);
-    if (nextName[0][0] === searchQuery) {
-      const name = nextName[0][0];
-      const link = nextName[0][1];
-      drawSearchResult(name, link);
-    }
+  const currentSearchParam = getSearchParam();
+  if (currentSearchParam === 'name') {
+    nameSearch(language);
+  } else if (currentSearchParam === 'surname') {
+    surnameSearch(language);
+  } else {
+    citySearch(language);
   }
 }
 
@@ -100,7 +172,6 @@ function checkInput() {
 function drawAuthor(res, id, name, linkCount) {
   const hrefsObj = Object.entries(data)[0][1];
   const hrefsArr = Object.entries(hrefsObj);
-  // console.log(hrefsArr[linkCount][1]);
   const link = hrefsArr[linkCount][1];
   res.insertAdjacentHTML('beforeend', `<li><a href='${link}' id=${id}>${name}</a></li>`);
 }

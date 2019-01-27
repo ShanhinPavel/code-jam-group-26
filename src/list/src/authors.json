@@ -4,20 +4,125 @@
         {"Yanka Kupala":"<a href='../page2/index.html' id='author2'>"},
         {"Vasil Bykov":"<a href='../page3/index.html' id='author3'>"},
         {"Kandrat Krapiva":"<a href='../page4/index.html' id='author4'>"},
-        {"Peter Brovka":"<a href='../page5/index.html' id='author5'>"}
+        {"Peter Brovka":"<a href='../page5/index.html' id='author5'>"},
+        {
+            "name": "Yakub",
+            "surname": "Kolas",
+            "city": "vitebsk",
+            "link": "<a href='../page1/index.html' id='author1'>",
+            "id": "author1"
+        },
+        {
+            "name": "Yanka",
+            "surname": "Kupala",
+            "city": "vitebsk",
+            "link": "<a href='../page2/index.html' id='author2'>",
+            "id": "author2"
+        },
+        {
+            "name": "Vasil",
+            "surname": "Bykov",
+            "city": "vitebsk",
+            "link": "<a href='../page3/index.html' id='author3'>",
+            "id": "author3"
+        },
+        {
+            "name": "Kandrat",
+            "surname": "Krapiva",
+            "city": "vitebsk",
+            "link": "<a href='../page4/index.html' id='author4'>",
+            "id": "author4"
+        },
+        {
+            "name": "Peter",
+            "surname": "Brovka",
+            "city": "minsk",
+            "link": "<a href='../page5/index.html' id='author5'>",
+            "id": "author5"
+        }
     ],
     "ru":[
         {"Якуб Колас":"<a href='../page1/index.html' id='author1'>"},
         {"Янка Купала":"<a href='../page2/index.html' id='author2'>"},
         {"Василь Быков":"<a href='../page3/index.html' id='author3'>"},
         {"Кондрат Крапива":"<a href='../page4/index.html' id='author4'>"},
-        {"Пётр Бровка":"<a href='../page5/index.html' id='author5'>"}
+        {"Пётр Бровка":"<a href='../page5/index.html' id='author5'>"},
+        {
+            "name": "Якуб",
+            "surname": "Колас",
+            "city": "витебск",
+            "link": "<a href='../page1/index.html' id='author1'>",
+            "id": "author1"
+        },
+        {
+            "name": "Янка",
+            "surname": "Купала",
+            "city": "витебск",
+            "link": "<a href='../page2/index.html' id='author2'>",
+            "id": "author2"
+        },
+        {
+            "name": "Василь",
+            "surname": "Быков",
+            "city": "витебск",
+            "link": "<a href='../page3/index.html' id='author3'>",
+            "id": "author3"
+        },
+        {
+            "name": "Кондрат",
+            "surname": "Крапива",
+            "city": "витебск",
+            "link": "<a href='../page4/index.html' id='author4'>",
+            "id": "author4"
+        },
+        {
+            "name": "Пётр",
+            "surname": "Бровка",
+            "city": "минск",
+            "link": "<a href='../page5/index.html' id='author5'>",
+            "id": "author5"
+        }
     ],
     "by":[
         {"Якуб Колас":"<a href='../page1/index.html' id='author1'>"},
         {"Янка Купала":"<a href='../page2/index.html' id='author2'>"},
         {"Васіль Быкаў":"<a href='../page3/index.html' id='author3'>"},
         {"Кандрат Крапіва":"<a href='../page4/index.html' id='author4'>"},
-        {"Пётр Броўка":"<a href='../page5/index.html' id='author5'>"}
+        {"Пётр Броўка":"<a href='../page5/index.html' id='author5'>"},
+        {
+            "name": "Якуб",
+            "surname": "Колас",
+            "city": "витебск",
+            "link": "<a href='../page1/index.html' id='author1'>",
+            "id": "author1"
+        },
+        {
+            "name": "Янка",
+            "surname": "Купала",
+            "city": "витебск",
+            "link": "<a href='../page2/index.html' id='author2'>",
+            "id": "author2"
+        },
+        {
+            "name": "Васіль",
+            "surname": "Быкаў",
+            "city": "витебск",
+            "link": "<a href='../page3/index.html' id='author3'>",
+            "id": "author3"
+        },
+        {
+            "name": "Кандрат",
+            "surname": "Крапіва",
+            "city": "витебск",
+            "link": "<a href='../page4/index.html' id='author4'>",
+            "id": "author4"
+        },
+        {
+            "name": "Пётр",
+            "surname": "Броўка",
+            "city": "минск",
+            "link": "<a href='../page5/index.html' id='author5'>",
+            "id": "author5"
+        }
     ]
 }

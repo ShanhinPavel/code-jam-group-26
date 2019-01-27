@@ -67,6 +67,8 @@ function init() {
   });
 }
 
+// SEARCH
+
 function drawSearchResult(name, link) {
   const results = document.getElementById('searchResults');
   results.innerHTML = `<li> ${link} ${name} </a></li>`;
@@ -87,7 +89,6 @@ function checkName(language) {
 
 function checkInput() {
   const currentLang = JSON.parse(localStorage.getItem('Culture-Portal'));
-
   const languages = Object.entries(names);
   for (let i = 0; i < languages.length; i += 1) {
     if (languages[i][0] === currentLang) {
@@ -96,10 +97,44 @@ function checkInput() {
   }
 }
 
+function drawAuthor(res, id, name, linkCount) {
+  const hrefsObj = Object.entries(data)[0][1];
+  const hrefsArr = Object.entries(hrefsObj);
+  // console.log(hrefsArr[linkCount][1]);
+  const link = hrefsArr[linkCount][1];
+  res.insertAdjacentHTML('beforeend', `<li><a href='${link}' id=${id}>${name}</a></li>`);
+}
+
+function drawRefresh(lang) {
+  const authorNames = Object.entries(data[lang]);
+  const resultsWrapper = document.getElementById('searchResults');
+  resultsWrapper.innerHTML = '';
+  let linkCount = 0;
+  for (let i = 2; i < 7; i += 1) {
+    const id = authorNames[i][0];
+    const name = authorNames[i][1];
+    drawAuthor(resultsWrapper, id, name, linkCount);
+    linkCount += 1;
+  }
+}
+
+function refresh() {
+  const currentLang = JSON.parse(localStorage.getItem('Culture-Portal'));
+  const a = Object.entries(data);
+  for (let i = 0; i < a.length; i += 1) {
+    if (a[i][0] === currentLang) {
+      const lang = a[i][0];
+      drawRefresh(lang);
+    }
+  }
+}
+
 function initSearch() {
   const searchButton = document.getElementById('searchLang');
+  const refreshButton = document.getElementById('showButton');
   init();
   searchButton.addEventListener('click', checkInput);
+  refreshButton.addEventListener('click', refresh);
 }
 
 window.onload = () => {

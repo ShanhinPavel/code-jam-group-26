@@ -85,7 +85,7 @@ function nameSearch(language) {
   const namesAndLinks = Object.entries(names[language]);
   const searchQuery = document.getElementById('searchInput').value;
   const queryToLowCase = searchQuery.toLowerCase();
-  for (let i = 5; i < 10; i += 1) {
+  for (let i = 0; i < 5; i += 1) {
     const namesArr = Object.entries(Object.entries(namesAndLinks)[i][1][1]);
     const nameProps = namesArr[0][1];
     const propToLowCase = nameProps.toLowerCase();
@@ -103,7 +103,7 @@ function surnameSearch(language) {
   const namesAndLinks = Object.entries(names[language]);
   const searchQuery = document.getElementById('searchInput').value;
   const queryToLowCase = searchQuery.toLowerCase();
-  for (let i = 5; i < 10; i += 1) {
+  for (let i = 0; i < 5; i += 1) {
     const namesArr = Object.entries(Object.entries(namesAndLinks)[i][1][1]);
     const nameProps = namesArr[1][1];
     const propToLowCase = nameProps.toLowerCase();
@@ -121,7 +121,7 @@ function citySearch(language) {
   const namesAndLinks = Object.entries(names[language]);
   const searchQuery = document.getElementById('searchInput').value;
   const queryToLowCase = searchQuery.toLowerCase();
-  for (let i = 5; i < 10; i += 1) {
+  for (let i = 0; i < 5; i += 1) {
     const namesArr = Object.entries(Object.entries(namesAndLinks)[i][1][1]);
     const nameProps = namesArr[2][1];
     const propToLowCase = nameProps.toLowerCase();
@@ -132,7 +132,6 @@ function citySearch(language) {
       drawSearchResult(name, surname, link);
     }
   }
-  
 }
 
 function getSearchParam() {

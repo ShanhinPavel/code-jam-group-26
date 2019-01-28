@@ -1,11 +1,11 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: gainsboro;
+  background-color: #CCD7E6 ;
 }
 
 header {
-  border: 1px solid #000000;
+  background-color: #5878A4;
 }
 
 a {
@@ -28,6 +28,77 @@ ul {
     'logo lang';
 }
 
+.main__navigation {
+  width: 90%;
+  height: 100%;
+  min-height: 30px;
+  min-width: 200px;
+  justify-content: center;
+  border-bottom: 2px solid #B7C6DB;
+  padding: 10px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: .1fr .1fr .1fr .1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+  'nav-main nav-list nav-dev nav-about';
+  grid-gap: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .main__navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-areas:
+      'nav-main nav-list'
+      'nav-dev nav-about'
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main__navigation {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      'nav-main' 
+      'nav-list'
+      'nav-dev' 
+      'nav-about'
+  }
+}
+
+
+
+.main__navigation-main{
+  grid-area: nav-main;
+}
+
+.main__navigation-list{
+  grid-area: nav-list;
+}
+
+.main__navigation-dev{
+  grid-area: nav-dev;
+}
+
+.main__navigation-about{
+  grid-area: nav-about;
+}
+
+.main__navigation a {
+  text-decoration: none;
+  color: #000000;
+  border: 1px solid #B7C6DB;
+  padding: 5px;
+  transition: .7s;
+}
+
+.main__navigation a:hover {
+  background-color: #B7C6DB;
+}
+
 @media screen and (max-width: 400px) {
   .navbar {
     display: grid;
@@ -40,25 +111,35 @@ ul {
 }
 
 main {
-  max-width: 1600px;
-  width: 100%;
+  width: 92%;
+  margin: 0 auto;
 }
 
 .headLogo {
   grid-area: logo;
   text-align: center;
   padding: 17px;
+  font-size: 1.4em;
+  font-weight: bold;
 }
 
 .lang__button {
   grid-area: lang;
-  text-align: center;
+  text-align: right;
   padding: 17px;
 }
 
 .langButton {
   width: 20%;
-  max-width: 80px;
+  max-width: 70px;
+  background-color: rgb(99, 125, 161);
+  border: 1px solid #B7C6DB;
+  height: 25px;
+  transition: .7s;
+}
+
+.langButton:hover{
+  background-color: #B7C6DB;
 }
 
 .authorSearchInput {
@@ -73,12 +154,21 @@ main {
   grid-area: searchButton;
 }
 
+.authorSearchButton button{
+  background-color: transparent;
+  border: 1px solid #B7C6DB;
+  width: 80%;
+}
+
 .showAllAuthors{
   grid-area: show;
 }
 
 .showAllAuthors button{
   font-size: 12px;
+  background-color: transparent;
+  border: 1px solid #B7C6DB;
+  width: 80%;
 }
 
 .pageName {
@@ -92,21 +182,33 @@ main {
 
 .filterButtons {
   grid-area: buttons;
-  border: 1px solid #000000;
+  border: 2px solid #B7C6DB;
   height: 100%;
 }
 
 .filterOptions {
   display: block;
   height: 30%;
-  /* margin: 1.515%; */
+  margin: 1.515%;
+  font-size: 20px;
+}
+
+.filterOptions:hover{
+  cursor: pointer;
 }
 
 .searchResults {
   grid-area: results;
-  border: 1px solid #000000;
+  border: 2px solid #B7C6DB;
   height: 100%;
   margin: 0;
+  padding: 0;
+}
+
+.searchResults li{
+  padding: 5px;
+  margin: 5px;
+  font-size: 18px;
 }
 
 @media screen and (min-width: 721px) {
@@ -118,13 +220,13 @@ main {
       'pageHead pageHead'
       'buttons results';
     grid-gap: 10px;
-    width: 95%;
-    margin: 2.5%;
+    width: 100%;
+    margin: 2.5% 0;
   }
 
   .searchHeadingWrap {
     grid-area: pageHead;
-    border: 1px solid #000000;
+    border: 2px solid #B7C6DB;
     display: grid;
     grid-template-columns: 1.2fr 3fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -145,13 +247,13 @@ main {
       'buttons'
       'results';
     grid-gap: 10px;
-    width: 95%;
+    width: 100%;
     margin: 2.5%;
   }
 
   .searchHeadingWrap {
     grid-area: pageHead;
-    border: 1px solid #000000;
+    border: 2px solid #B7C6DB;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;

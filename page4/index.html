@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="../page4/page4.css" rel="stylesheet"></head>
   <body>
-    <header>
       <header class='main'>
         <h1 class="main__logo" id="main__logo">Писатели Белоруссии</h1>
         <div class="main__lang-buttons">
@@ -16,7 +15,12 @@
           <button value="en" data-lang="en">en</button>
         </div>
       </header>
-    </header>
+      <nav class="main__navigation">
+        <a href="../index.html" id="title_main" class="main__navigation-main">Главная</a>
+        <a href="../list/list.html" id="title_authors" class="main__navigation-list">Авторы</a>
+        <a href="../index.html" id="title_developers" class="main__navigation-dev">Разработчики</a>
+        <a href="../index.html" id="title_about-us" class="main__navigation-about">О нас</a>
+      </nav>
     <main class="authorWrapper">
       <h2 class="authorName author" id="authorName">Author Name</h2>
       <img class="authorPhoto author" alt="author photo will be here" id="authorPhoto"></img>

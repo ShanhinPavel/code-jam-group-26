@@ -1,7 +1,7 @@
 import '../../template/index.css';
 import shortInformation from './shortInformation.json';
 
-function addAuthorToPage(data) {
+function getAuthor(data) {
   // Get authors by language
   const sitesLanguage = JSON.parse(localStorage.getItem('Culture-Portal'));
   const authorCollectionByLanguage = data[sitesLanguage];
@@ -10,14 +10,19 @@ function addAuthorToPage(data) {
   let day = date.getDay();
   // Get author from array
   let author = data.authorsList[day];
+
   if (!author) {
-    day = Math.floor(Math.random() * 5);
+    day = 4;
   }
   author = data.authorsList[day];
   // Get author from json
   const authorData = authorCollectionByLanguage[author];
+  return authorData;
+}
+
+function addAuthorToPage(authorData, id) {
   // Get dom elements and add information to them
-  const authorInformation = document.getElementById('author-information');
+  const authorInformation = document.getElementById(id);
   const authorName = authorInformation.firstElementChild;
   const authorDescription = authorName.nextElementSibling;
   // Add information to page
@@ -25,7 +30,9 @@ function addAuthorToPage(data) {
   authorDescription.textContent = authorData.description;
 }
 
-
 document.addEventListener('DOMContentLoaded', () => {
-  addAuthorToPage(shortInformation);
+  const elementId = 'day-author';
+  const author = getAuthor(shortInformation);
+  console.log(author);
+  addAuthorToPage(author, elementId);
 });

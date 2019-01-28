@@ -67,7 +67,13 @@ function init() {
   });
 }
 
-// SEARCH
+function checkEmptyResult() {
+  const results = document.getElementById('searchResults').textContent;
+  const resWrap = document.getElementById('searchResults');
+  if (results === '') {
+    resWrap.insertAdjacentHTML('afterbegin', '<p style="font-size: 50px;">nothing not found :(</p>');
+  }
+}
 
 function drawSearchResult(name, surname, link) {
   const results = document.getElementById('searchResults');
@@ -81,9 +87,11 @@ function clearResults() {
 }
 
 function nameSearch(language) {
-  clearResults();
   const namesAndLinks = Object.entries(names[language]);
   const searchQuery = document.getElementById('searchInput').value;
+  if (searchQuery === '') {
+    alert('enter smth!');
+  } else { clearResults(); }
   const queryToLowCase = searchQuery.toLowerCase();
   for (let i = 0; i < 5; i += 1) {
     const namesArr = Object.entries(Object.entries(namesAndLinks)[i][1][1]);
@@ -95,13 +103,16 @@ function nameSearch(language) {
       const link = namesArr[3][1];
       drawSearchResult(name, surname, link);
     }
+    checkEmptyResult();
   }
 }
 
 function surnameSearch(language) {
-  clearResults();
   const namesAndLinks = Object.entries(names[language]);
   const searchQuery = document.getElementById('searchInput').value;
+  if (searchQuery === '') {
+    alert('enter smth!');
+  } else { clearResults(); }
   const queryToLowCase = searchQuery.toLowerCase();
   for (let i = 0; i < 5; i += 1) {
     const namesArr = Object.entries(Object.entries(namesAndLinks)[i][1][1]);
@@ -113,13 +124,16 @@ function surnameSearch(language) {
       const link = namesArr[3][1];
       drawSearchResult(name, surname, link);
     }
+    checkEmptyResult();
   }
 }
 
 function citySearch(language) {
-  clearResults();
   const namesAndLinks = Object.entries(names[language]);
   const searchQuery = document.getElementById('searchInput').value;
+  if (searchQuery === '') {
+    alert('enter smth!');
+  } else { clearResults(); }
   const queryToLowCase = searchQuery.toLowerCase();
   for (let i = 0; i < 5; i += 1) {
     const namesArr = Object.entries(Object.entries(namesAndLinks)[i][1][1]);
@@ -131,6 +145,7 @@ function citySearch(language) {
       const link = namesArr[3][1];
       drawSearchResult(name, surname, link);
     }
+    checkEmptyResult();
   }
 }
 

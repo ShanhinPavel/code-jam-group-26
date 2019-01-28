@@ -14,7 +14,11 @@
     "photoGalTitle": "Photo gallery",
     "authorName": "Vasil Bykov",
     "authorAbout": "Vasíl Uładzímiravič Býkaŭ (often spelled Vasil Bykov, Belarusian: Васі́ль Уладзі́міравіч Бы́каў, Russian: Василь Влади́мирович Быков) (19 June 1924 – 22 June 2003) was a prolific author of novels and novellas about World War II and a significant figure in Belarusian literature and civic thought. His work earned him endorsements for the Nobel Prize nomination from, among others, Nobel Prize laureates Joseph Brodsky and Czesław Miłosz.",
-    "authorWorks": "1960 – Crane's Cry<br>1960 – Knight move <br>1962 – Third Rocket <br>1964 – The Alpine Ballad <br>1965 – One Night<br>1970 – The Ordeal <br>1971 – The Obelisk <br>1973 – To Live till Sunrise <br>1974 – Wolf Pack <br>1975 – His Battalion <br>1978 – To Go and not Return <br>1983 – Sign of Misfortune <br>1989 – In the Fog <br>1997 – The Wall <br>2003 – The Long Road Home "
+    "authorWorks": "1960 – Crane's Cry<br>1960 – Knight move <br>1962 – Third Rocket <br>1964 – The Alpine Ballad <br>1965 – One Night<br>1970 – The Ordeal <br>1971 – The Obelisk <br>1973 – To Live till Sunrise <br>1974 – Wolf Pack <br>1975 – His Battalion <br>1978 – To Go and not Return <br>1983 – Sign of Misfortune <br>1989 – In the Fog <br>1997 – The Wall <br>2003 – The Long Road Home ",
+    "title_main": "Main",
+    "title_authors": "Authors",
+    "title_developers": "Developers",
+    "title_about-us": "About Us"
   },
   "ru": {
     "main__logo": "Писатели Беларуси",
@@ -22,7 +26,11 @@
     "photoGalTitle": "Фото галлерея",
     "authorName": "Василь Быков",
     "authorAbout": "Васи́ль Влади́мирович Бы́ков (белор. Васіль Уладзіміравіч Быкаў; 19 июня 1924, дер. Бычки Ушачского района Витебской области — 22 июня 2003, Боровляны) — советский и белорусский писатель, общественный деятель, участник Великой Отечественной войны. Член Союза писателей СССР. Герой Социалистического Труда (1984). Народный писатель Беларуси (1980). Лауреат Ленинской премии (1986). Лауреат Государственной премии СССР (1974). Лауреат Государственной премии Белорусской ССР (1978). Большинство произведений — повести, действие которых происходит во время Великой Отечественной войны и в которых показан нравственный выбор человека в наиболее драматичные моменты жизни.",
-    "authorWorks": "Последний боец (1957)<br>Журавлиный крик (1959)<br>Предательство (1960)<br>Третья ракета (1961)<br>Западня (1962) <br>Альпийская баллада (1963)<br>Мёртвым не больно (1965)<br>Проклятая высота (1968)<br>Круглянский мост (1968)<br>Стужа (1969/1991)<br>Сотников (1970)<br>Обелиск (1971)<br>Дожить до рассвета (1972)"
+    "authorWorks": "Последний боец (1957)<br>Журавлиный крик (1959)<br>Предательство (1960)<br>Третья ракета (1961)<br>Западня (1962) <br>Альпийская баллада (1963)<br>Мёртвым не больно (1965)<br>Проклятая высота (1968)<br>Круглянский мост (1968)<br>Стужа (1969/1991)<br>Сотников (1970)<br>Обелиск (1971)<br>Дожить до рассвета (1972)",
+    "title_main": "Главная",
+    "title_authors": "Авторы",
+    "title_developers": "Разработчики",
+    "title_about-us": "О нас"
   },
   "by": {
     "main__logo": "Пісьменнікі Беларусі",
@@ -30,6 +38,10 @@
     "photoGalTitle": "Фота галерэя",
     "authorName": "Васіль Быкаў",
     "authorAbout": "Васіль Уладзіміравіч Быкаў (19 чэрвеня 1924, в. Бычкі, Ушацкі раён — 22 чэрвеня 2003, в. Бараўляны, Мінскі раён, Беларусь) — беларускі і савецкі пісьменнік і грамадскі дзеяч, удзельнік Вялікай Айчыннай вайны, капітан. Большасць твораў — аповесці, дзеянне якіх адбываецца падчас Вялікай Айчыннай вайны і ў якіх паказаны маральны выбар чалавека ў найбольш драматычныя моманты жыцця.",
-    "authorWorks": "Апошні баец (1957) <br> Жураўліны крык (1959) <br> Здрада (1960) <br> Трэцяя ракета (1961) <br> Пастка (1962) <br> Альпійская балада (1963) <br> Мёртвым не баліць ( 1965) <br> Праклятая вышыня (1968) <br> Круглянскі мост (1968) <br> сцюжы (1969/1991) <br> Сотнікаў (1970) <br> Абеліск (1971) <br> Дажыць да світання (1972)"
+    "authorWorks": "Апошні баец (1957) <br> Жураўліны крык (1959) <br> Здрада (1960) <br> Трэцяя ракета (1961) <br> Пастка (1962) <br> Альпійская балада (1963) <br> Мёртвым не баліць ( 1965) <br> Праклятая вышыня (1968) <br> Круглянскі мост (1968) <br> сцюжы (1969/1991) <br> Сотнікаў (1970) <br> Абеліск (1971) <br> Дажыць да світання (1972)",
+    "title_main": "Галоўная",
+    "title_authors": "Аўтары",
+    "title_developers": "Распрацоўшчыкі",
+    "title_about-us": "Пра нас"
   }
 }

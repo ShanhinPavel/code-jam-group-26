@@ -17,7 +17,11 @@
     "nameLang": "by name",
     "surnameLang": "by surname",
     "cityLang": "by city",
-    "searchLang": "search"
+    "searchLang": "search",
+    "title_main": "Main",
+    "title_authors": "Authors",
+    "title_developers": "Developers",
+    "title_about-us": "About Us"
   },
   "ru": {
     "pageName": "Список Авторов",
@@ -30,7 +34,11 @@
     "nameLang": "по имени",
     "surnameLang": "по фамилии",
     "cityLang": "по городу",
-    "searchLang": "Поиск"
+    "searchLang": "Поиск",
+    "title_main": "Главная",
+    "title_authors": "Авторы",
+    "title_developers": "Разработчики",
+    "title_about-us": "О нас"
   },
   "by": {
     "pageName": "Спіс Аўтараў",
@@ -43,6 +51,10 @@
     "nameLang": "па імі",
     "surnameLang": "па прозвішчы",
     "cityLang": "па горадзе",
-    "searchLang": "Пошук"
+    "searchLang": "Пошук",
+    "title_main": "Галоўная",
+    "title_authors": "Аўтары",
+    "title_developers": "Распрацоўшчыкі",
+    "title_about-us": "Пра нас"
   }
 }

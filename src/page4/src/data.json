@@ -14,7 +14,11 @@
     "photoGalTitle": "Photo gallery",
     "authorName": "Kandrat Krapiva",
     "authorAbout": "Kondrat Krapiva (Belarusian: Кандрат Крапіва, 5 March 1896 – 7 January 1991) was a Belarusian writer, playwright, social activist, and literary critic. He was the winner of two Stalin Prizes in 1941 and 1951 and winner of the USSR State Prize in 1971. From 1950 he was a member of the Academy of Sciences of the Belorussian SSR. He was a writer for the magazine, Polymya. Krapiva served in the Tsarist army from 1915, the Red Army from 1920 to 1923, and was involved in the campaign for the liberation of western Byelorussia in 1939 and the Great Patriotic War (1941–45). His began his literary career in 1922, writing fables, poems, narrative poems, and short stories. Among his notable short stories are The Nettle (1925), Fables (1927), Neighbors (1928), and Live Phenomena (1930). He published the novel The Medvedichi in 1932. He was also a notable playwright, writing plays such as The Partisans (1937), a heroic drama, and He Who Laughs Last (1939), a comedy which earned him the State Prize of the USSR in 1941. Post-war plays include With the People (1948) and People and Devils (1958).",
-    "authorWorks": "Astio (1925) <br> Nettle (1925) <br> The Bible (1926) <br> Fables (1927) <br> The Ukhabs on the Road (1930) <br> About Our pests, priests and saints ”(1930) <br>“ Fedos - Red Nose ”(1931, poem in fairy tales) <br>“ The prickly system ”(1932) <br>“ Selected fables ”(1932) <br>“ Selected poems (1935) <br> The Selected Satyr (1938) <br> Selected Works (1941, 1947, 1948) <br> Laughter and Anger (1946) <br> Satire and Humor (1954) <br> “Toad in a rut” (1957) <br> “Fables, poems and plays” (1960) <br> “Forty fables” (1966) <br> “Poems and fables” (1967, 1990) <br> “Fables and Poems” (1971) <br> Book for Children “The Mysteries of Kondrat’s Grandfather” (1986)."
+    "authorWorks": "Astio (1925) <br> Nettle (1925) <br> The Bible (1926) <br> Fables (1927) <br> The Ukhabs on the Road (1930) <br> About Our pests, priests and saints ”(1930) <br>“ Fedos - Red Nose ”(1931, poem in fairy tales) <br>“ The prickly system ”(1932) <br>“ Selected fables ”(1932) <br>“ Selected poems (1935) <br> The Selected Satyr (1938) <br> Selected Works (1941, 1947, 1948) <br> Laughter and Anger (1946) <br> Satire and Humor (1954) <br> “Toad in a rut” (1957) <br> “Fables, poems and plays” (1960) <br> “Forty fables” (1966) <br> “Poems and fables” (1967, 1990) <br> “Fables and Poems” (1971) <br> Book for Children “The Mysteries of Kondrat’s Grandfather” (1986).",
+    "title_main": "Main",
+    "title_authors": "Authors",
+    "title_developers": "Developers",
+    "title_about-us": "About Us"
   },
   "ru": {
     "main__logo": "Писатели Беларуси",
@@ -22,7 +26,11 @@
     "photoGalTitle": "Фото галлерея",
     "authorName": "Кондрат Крапива",
     "authorAbout": "Кондра́т Крапива́ (белор. Кандрат Крапіва, настоящее имя — Кондра́т Кондра́тович Атрахо́вич; белор. Кандрат Атраховіч; 1896—1991) — белорусский советский писатель, поэт, драматург и переводчик, литературовед, сатирик, общественный деятель. Доктор филологических наук, академик АН Белорусской ССР (1950). Член ВКП(б) с 1941 года. Народный писатель Белорусской ССР (1956). Герой Социалистического Труда (1975). Лауреат двух Сталинских премий (1941, 1951) и Государственной премии СССР (1971).",
-    "authorWorks": "«Астё» (1925)<br>«Крапива» (1925)<br>«Библия» (1926)<br>«Басни» (1927)<br>«Ухабы на дороге» (1930)<br>«Про наших вредителей, попов и угодников» (1930)<br>«Федос — Красный нос» (1931, стихотворная сказка)<br>«Колючий строй» (1932)<br>«Избранные басни» (1932)<br>«Избранные стихи» (1935)<br>«Избранная сатира» (1938)<br>«Избранные произведения» (1941, 1947, 1948)<br>«Смех и гнев» (1946)<br>«Сатира и юмор» (1954)<br>«Жаба в колее» (1957)<br>«Басни, стихи и пьесы» (1960)<br>«Сорок басен» (1966)<br>«Стихи и басни» (1967, 1990)<br>«Басни и стихи» (1971)<br>Книга для детей «Загадки деда Кондрата» (1986)."
+    "authorWorks": "«Астё» (1925)<br>«Крапива» (1925)<br>«Библия» (1926)<br>«Басни» (1927)<br>«Ухабы на дороге» (1930)<br>«Про наших вредителей, попов и угодников» (1930)<br>«Федос — Красный нос» (1931, стихотворная сказка)<br>«Колючий строй» (1932)<br>«Избранные басни» (1932)<br>«Избранные стихи» (1935)<br>«Избранная сатира» (1938)<br>«Избранные произведения» (1941, 1947, 1948)<br>«Смех и гнев» (1946)<br>«Сатира и юмор» (1954)<br>«Жаба в колее» (1957)<br>«Басни, стихи и пьесы» (1960)<br>«Сорок басен» (1966)<br>«Стихи и басни» (1967, 1990)<br>«Басни и стихи» (1971)<br>Книга для детей «Загадки деда Кондрата» (1986).",
+    "title_main": "Главная",
+    "title_authors": "Авторы",
+    "title_developers": "Разработчики",
+    "title_about-us": "О нас"
   },
   "by": {
     "main__logo": "Пісьменнікі Беларусі",
@@ -30,6 +38,10 @@
     "photoGalTitle": "Фота галерэя",
     "authorName": "Кандрат Крапіва",
     "authorAbout": "Кандра́т Крапіва́, сапр.: Кандра́т Кандра́тавіч Атрахо́віч (5 сакавіка 1896, в. Нізок, цяпер Уздзенскі раён — 7 студзеня 1991, Мінск) — беларускі пісьменнік, паэт, сатырык, драматург, перакладчык, грамадскі дзеяч, літаратуразнавец. Народны пісьменнік Беларусі (1956). Герой Сацыялістычнай Працы (1975). Лаўрэат дзвюх Сталінскіх прэмій (1941, 1951) і Дзяржаўнай прэміі СССР (1971). З 1940 — член-карэспандэнт, а з 1950 — акадэмік АН БССР. Доктар філалагічных навук.",
-    "authorWorks": "«Астё» (1925) <br> «Крапіва» (1925) <br> «Біблія» (1926) <br> «Байкі» (1927) <br> «Выбоіны на дарозе» (1930) <br> «Пра нашых шкоднікаў, папоў і угоднікаў »(1930) <br>« Хвядос - Чырвоны нос (1931, вершаваная казка) <br>« Калючы строй »(1932) <br>« Выбраныя байкі »(1932) <br>« Выбраныя вершы »(1935) <br>« Выбраная сатыра (1938) <br>« Выбраныя творы (1941, 1947, 1948) <br>« Смех і гнеў (1946) <br>« сатыра і гумар »(1954) <br> «Жаба ў каляіне» (1957) <br> «байкі, вершы і п'есы» (1960) <br> «Сорак баек» (1966) <br> «вершы і байкі» (1967, 1990) <br> «Байкі і вершы» (1971) <br> Кніга для дзяцей «Загадкі дзеда Кандрата» (1986)."
+    "authorWorks": "«Астё» (1925) <br> «Крапіва» (1925) <br> «Біблія» (1926) <br> «Байкі» (1927) <br> «Выбоіны на дарозе» (1930) <br> «Пра нашых шкоднікаў, папоў і угоднікаў »(1930) <br>« Хвядос - Чырвоны нос (1931, вершаваная казка) <br>« Калючы строй »(1932) <br>« Выбраныя байкі »(1932) <br>« Выбраныя вершы »(1935) <br>« Выбраная сатыра (1938) <br>« Выбраныя творы (1941, 1947, 1948) <br>« Смех і гнеў (1946) <br>« сатыра і гумар »(1954) <br> «Жаба ў каляіне» (1957) <br> «байкі, вершы і п'есы» (1960) <br> «Сорак баек» (1966) <br> «вершы і байкі» (1967, 1990) <br> «Байкі і вершы» (1971) <br> Кніга для дзяцей «Загадкі дзеда Кандрата» (1986).",
+    "title_main": "Галоўная",
+    "title_authors": "Аўтары",
+    "title_developers": "Распрацоўшчыкі",
+    "title_about-us": "Пра нас"
   }
 }

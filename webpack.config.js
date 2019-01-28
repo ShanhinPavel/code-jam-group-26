@@ -9,11 +9,11 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: {
-    page1: './src/page1/src/main.js',
-    page2: './src/page2/src/main.js',
-    page3: './src/page3/src/main.js',
-    page4: './src/page4/src/main.js',
-    page5: './src/page5/src/main.js',
+    page1: './src/template/main.js',
+    page2: './src/template/main.js',
+    page3: './src/template/main.js',
+    page4: './src/template/main.js',
+    page5: './src/template/main.js',
     index: './src/index/src/main.js',
     list: './src/list/src/main.js',
   },

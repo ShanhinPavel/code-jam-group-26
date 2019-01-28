@@ -67,14 +67,6 @@ function init() {
   });
 }
 
-function checkEmptyResult() {
-  const results = document.getElementById('searchResults').textContent;
-  const resWrap = document.getElementById('searchResults');
-  if (results === '') {
-    resWrap.insertAdjacentHTML('afterbegin', '<p style="font-size: 50px;">nothing not found :(</p>');
-  }
-}
-
 function drawSearchResult(name, surname, link) {
   const results = document.getElementById('searchResults');
   const fullLink = `<li>${link}${name} ${surname}</a></li>`;
@@ -103,7 +95,6 @@ function nameSearch(language) {
       const link = namesArr[3][1];
       drawSearchResult(name, surname, link);
     }
-    checkEmptyResult();
   }
 }
 
@@ -124,7 +115,6 @@ function surnameSearch(language) {
       const link = namesArr[3][1];
       drawSearchResult(name, surname, link);
     }
-    checkEmptyResult();
   }
 }
 
@@ -145,7 +135,6 @@ function citySearch(language) {
       const link = namesArr[3][1];
       drawSearchResult(name, surname, link);
     }
-    checkEmptyResult();
   }
 }
 
@@ -160,6 +149,7 @@ function getSearchParam() {
   } if (city.checked) {
     return ('city');
   }
+  return null;
 }
 
 function checkName(language) {
